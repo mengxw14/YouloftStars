@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/lv_img"
+        android:layout_width="129dp"
+        android:layout_height="135dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="14dp"/>
+    <ImageView
+        android:id="@+id/lv_title"
+        android:layout_width="139dp"
+        android:layout_height="31dp"
+        android:layout_toRightOf="@id/lv_img"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="41dp"/>
+    <TextView
+        android:id="@+id/lv_text1"
+        android:layout_width="132dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lv_img"
+        android:layout_below="@+id/lv_title"
+        android:textSize="14sp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#B89EEC"
+        android:text="你的命运如何"/>
+    <TextView
+        android:id="@+id/lv_text2"
+        android:layout_width="132dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lv_img"
+        android:layout_below="@+id/lv_text1"
+        android:textSize="14sp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#B89EEC"
+        android:text="你的命运如何"/>
+</RelativeLayout>

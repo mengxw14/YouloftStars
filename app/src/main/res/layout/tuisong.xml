@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ts_img"
+        android:layout_width="131dp"
+        android:layout_height="104dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/pingfen"/>
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="290dp"
+        android:layout_height="300dp"
+        android:layout_alignTop="@+id/ts_img"
+        android:layout_marginTop="38dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ts_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jujue"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/guli_title"
+            android:layout_marginTop="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="打赏一个五星鼓励吧!"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:layout_marginTop="23dp"
+            android:id="@+id/guli_text"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/guli_title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="您的建议和鼓励会帮助我们做得更好~"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/guli_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/guli_text"
+            android:background="@drawable/guli"
+            android:layout_marginTop="29dp"
+            android:text="鼓励一下"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="219dp"
+            android:layout_height="44dp"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/guli_btn"
+            android:layout_marginTop="11dp"
+            android:text="我要吐槽"
+            android:textColor="#6F5B99"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="219dp"
+            android:layout_height="44dp" />
+    </RelativeLayout>
+</RelativeLayout>

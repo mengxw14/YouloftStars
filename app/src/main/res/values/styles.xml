@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <declare-styleable name="MyView1">
+        <attr name="set_text" format="string"/>
+        <attr name="set_img" format="integer"/>
+        <attr name="set_count" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="ItemView">
+        <attr name="set_iimg" format="integer"/>
+        <attr name="set_text1" format="string"/>
+        <attr name="set_text2" format="string"/>
+    </declare-styleable>
+
+</resources>

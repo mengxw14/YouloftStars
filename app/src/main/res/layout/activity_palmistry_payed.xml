@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Palmistry_payed"
+    android:background="#0A001A">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手相报告"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="136dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/report"
+                android:layout_marginTop="34dp"
+                android:layout_centerHorizontal="true"/>
+            <!--
+            <RelativeLayout
+                android:id="@+id/info"
+                android:layout_below="@id/picture"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/backk">
+                <ImageView
+                    android:layout_width=""
+                    android:layout_height=""
+            </RelativeLayout>
+            -->
+            <ImageView
+                android:id="@+id/yishengzongyun"
+                android:src="@mipmap/yishengzongyun"
+                android:layout_below="@id/picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
