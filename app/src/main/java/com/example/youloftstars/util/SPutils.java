@@ -15,4 +15,10 @@ public class SPutils {
         SharedPreferences.Editor editor = sp.edit();
         return sp.getBoolean(Constant.TUISONG,false);
     }
+    public static void putBoolean(Context c,String key,Boolean b){
+        SharedPreferences sp = getSp(c);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putBoolean(key,b);
+        editor.commit();
+    }
 }

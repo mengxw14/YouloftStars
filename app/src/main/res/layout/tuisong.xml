@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="290dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/ts_img"
-        android:layout_width="131dp"
-        android:layout_height="104dp"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/pingfen"/>
+
     <RelativeLayout
         android:layout_centerHorizontal="true"
-        android:layout_width="290dp"
+        android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:layout_alignTop="@+id/ts_img"
-        android:layout_marginTop="38dp"
-        android:orientation="vertical">
+        android:layout_marginTop="38dp">
         <ImageView
             android:id="@+id/ts_cancel"
             android:layout_width="wrap_content"
@@ -59,6 +53,7 @@
             android:layout_width="219dp"
             android:layout_height="44dp"/>
         <TextView
+            android:id="@+id/tucao_btn"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/guli_btn"
             android:layout_marginTop="11dp"
@@ -69,4 +64,11 @@
             android:layout_width="219dp"
             android:layout_height="44dp" />
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ts_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/pingfen"/>
 </RelativeLayout>
