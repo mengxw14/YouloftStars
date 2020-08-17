@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".view.FourtuneDetail"
-    android:background="#0A001A">
-    <androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@android:color/holo_red_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.fragment.app.FragmentTabHost
+        android:id="@+id/tab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/fourtun_xingzuo_select"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/fourtun_day_select"
-            app:layout_constraintTop_toTopOf="@id/fourtun_xingzuo_select"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <FrameLayout
-                android:id="@+id/fourtune_frame"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </androidx.viewpager.widget.ViewPager>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+        android:layout_height="40dp"/>
+    <FrameLayout
+        android:background="@android:color/holo_red_dark"
+        android:id="@android:id/tabcontent"
+        app:layout_constraintTop_toBottomOf="@id/tab"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

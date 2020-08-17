@@ -15,6 +15,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
@@ -133,7 +134,9 @@ public class PalmistryActivity extends Activity {
         attributes.alpha=0.3f;
         attributes.width = WindowManager.LayoutParams.WRAP_CONTENT;
         attributes.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        //dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        //dialog.getWindow().setBackgroundDrawableResource(new Co);
+        //android:drawable/empty
         ImageView btn1 = v.findViewById(R.id.ts_cancel);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

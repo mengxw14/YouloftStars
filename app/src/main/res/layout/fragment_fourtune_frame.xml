@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="24sp"
+        android:textColor="#ffffff"
         android:text="你好世界" />
 
 </FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.TodayFragment"
+    android:background="#1A0D35">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.youloftstars.view.MyGridView
+            android:id="@+id/grid_fourtune_number"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:numColumns="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/grid_fourtune_other"
+            app:layout_constraintTop_toBottomOf="@+id/grid_fourtune_number"
+            app:layout_constraintRight_toRightOf="parent"
+            android:numColumns="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.example.youloftstars.view.MyListView
+            android:id="@+id/list_fourtune_number"
+            app:layout_constraintTop_toBottomOf="@id/grid_fourtune_other"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

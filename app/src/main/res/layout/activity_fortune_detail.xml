@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FortuneDetail">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 用于星座的选择 -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/xingzuo_viewpage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- 用于数据的展示 -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/choose_detail"
+            app:layout_constraintTop_toBottomOf="@id/xingzuo_viewpage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/detail_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.viewpager.widget.ViewPager>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fourtune_grid_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@mipmap/path"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@+id/fourtune_grid_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:max="100"
+        android:progress="75"
+        android:layout_height="7dp"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#FF6F5B99"
+        android:id="@+id/fourtune_grid_title"
+        android:text="金钱运势"
+        app:layout_constraintLeft_toLeftOf="@+id/fourtune_grid_bar"
+        app:layout_constraintBottom_toTopOf="@id/fourtune_grid_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/fourtune_grid_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/fourtune_grid_bar"
+        app:layout_constraintBottom_toTopOf="@id/fourtune_grid_bar"
+        android:textColor="#5a63f2"
+        android:text="90"
+        android:layout_marginBottom="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

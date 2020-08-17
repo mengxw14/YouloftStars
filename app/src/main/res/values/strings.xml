@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">YouloftStars</string>
+    <array name="yunshi_titles">
+        <item>今天</item>
+        <item>明天</item>
+        <item>本周</item>
+        <item>本月</item>
+        <item>本年</item>
+    </array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">YouloftStars</string>
+    <string name="title_activity_fourtune_tabbed">FourtuneTabbed</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

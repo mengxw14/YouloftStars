@@ -2,6 +2,7 @@ package com.example.youloftstars;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -36,6 +37,8 @@ import com.example.youloftstars.bean.ProductInfo;
 import com.example.youloftstars.util.HttpUtils;
 import com.example.youloftstars.util.RetrofitNetWork;
 import com.example.youloftstars.util.ScreenAdjust;
+import com.example.youloftstars.view.FourtuneDetail;
+import com.example.youloftstars.view.FourtuneTabbed;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -43,6 +46,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private RetrofitNetWork mNetWork = null;
+    private ConstraintLayout mZongjie;
     private ListView mListView;
     private GridView mGridView1;
     private GridView mGridView2;
@@ -80,15 +84,7 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                try {
-                    String json = response.body().string();
-                    Intent intent = new Intent(MainActivity.this,fourtuneDetailShow.class);
-                    intent.putExtra("json",json);
-                    startActivity(intent);
-                    //请求到的json数据传入Intent进入另一个activity---请求不了
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                //没有文章 java代码被错删
             }
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
@@ -171,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
         mStar3 = findViewById(R.id.star_3);
         mStar4 = findViewById(R.id.star_4);
         mStar5 = findViewById(R.id.star_5);
+        mZongjie = findViewById(R.id.zongjie);
     }
     private void initData(){
         mGson = new Gson();
@@ -219,6 +216,13 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //通过后台的参数获取点击的按钮 因为只有一个 就假装已经处理过了
                 Intent intent = new Intent(MainActivity.this,PalmistryActivity.class);
+                startActivity(intent);
+            }
+        });
+        mZongjie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TableTestToActivity.class);
                 startActivity(intent);
             }
         });

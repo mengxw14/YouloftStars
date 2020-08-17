@@ -6,16 +6,25 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <declare-styleable name="MyView1">
-        <attr name="set_text" format="string"/>
-        <attr name="set_img" format="integer"/>
-        <attr name="set_count" format="string"/>
+        <attr name="set_text" format="string" />
+        <attr name="set_img" format="integer" />
+        <attr name="set_count" format="string" />
     </declare-styleable>
+
     <declare-styleable name="ItemView">
-        <attr name="set_iimg" format="integer"/>
-        <attr name="set_text1" format="string"/>
-        <attr name="set_text2" format="string"/>
+        <attr name="set_iimg" format="integer" />
+        <attr name="set_text1" format="string" />
+        <attr name="set_text2" format="string" />
     </declare-styleable>
 
 </resources>
